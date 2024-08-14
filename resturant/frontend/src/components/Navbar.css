@@ -1,0 +1,25 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #8B0000;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar:hover {
+    background-color: #B22222;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    text-decoration: azure;
+    color: #ffc107;
+  }

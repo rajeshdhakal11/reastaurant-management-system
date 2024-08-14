@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Container Style */
+.main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #28a745; /* Green navbar */
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease; 
+}
+
+.navbar:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: azure;
+  color: #ffc107; /* Yellow on hover */
+}
+
+/* Home Page Styles */
+.menu-container {
+  display: ruby-base-container;           /* Enable flexbox layout */
+  flex-direction: row;  /* Make the container a vertical column */
+  justify-content: center; /* Center items vertically */
+  align-items: center;     /* Center items horizontally */
+  margin-top: 2rem;
+}
+
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #d9534f; /* Red title */
+}
+
+.menu-item-card {
+  background-color: #655555; /* White card background */
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease; /* Transition only box-shadow on hover */
+  text-align: center; /* Center text content */
+}
+
+.menu-item-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.menu-item-card img {
+  height: 200px;
+  width: 100%; 
+  object-fit: fill; /* Maintain image aspect ratio */
+}
+
+.menu-item-card .price {
+  font-weight: bold;
+}
+
+/* Add to Cart Button Styling */
+.menu-item-card .btn-primary {
+  background-color: #d9534f; /* Red button */
+  border-color: #d9534f;
+  width: 100%; /* Make button full width */
+  margin-top: 10px; 
+}
+
+.menu-item-card .btn-primary:hover {
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+/* Cart Page Styles */
+.cart-page h2 {
+  margin-bottom: 1.5rem;
+}
+
+.cart-page .table {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-page .table th {
+  background-color: #28a745;
+  color: white;
+}
+
+.cart-page .empty-cart-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.table {
+  table-layout: fixed; /* To ensure columns have equal width */
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table .quantity-control button {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.total-price {
+  font-weight: bold;
+}
+
+.place-order-btn {
+  background-color: #28a745; 
+  border-color: #28a745;
+}
+
+/*... your other styles */
+
+/* Place Order Animation */
+@keyframes placeOrderAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Briefly enlarge the button */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.place-order-btn:active { /* Animation on click */
+  animation: placeOrderAnimation 0.1s ease;
+}
+
+.order-confirmed-message {
+  animation: fadeIn 0.5s ease; /* Fade in animation for the message */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

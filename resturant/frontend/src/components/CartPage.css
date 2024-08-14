@@ -1,0 +1,62 @@
+/* Cart Page Styles */
+.cart-page h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .cart-page .table {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-page .table th {
+    background-color: #8B0000;
+    color: white;
+  }
+  
+  .cart-page .empty-cart-message {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .table {
+    table-layout: fixed;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  
+  .table .quantity-control button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .total-price {
+    font-weight: bold;
+  }
+  
+  .place-order-btn {
+    background-color: #8B0000;
+    border-color: #8B0000;
+  }
+  
+  /* Place Order Animation */
+  @keyframes placeOrderAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .place-order-btn:active {
+    animation: placeOrderAnimation 0.1s ease;
+  }
+  
+  .order-confirmed-message {
+    animation: fadeIn 0.5s ease;
+  }

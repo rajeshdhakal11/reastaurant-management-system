@@ -1,0 +1,138 @@
+/* Home Page Styles */
+.menu-container {
+    display: ruby-base-container;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease;
+  }
+  
+  .menu-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #8B0000;
+    animation: slideInDown 1s ease;
+  }
+  
+  .menu-item-card {
+    background-color: #655555;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .menu-item-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image-container {
+    position: relative;
+  }
+  
+  .favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .favorite-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .menu-item-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: fill;
+  }
+  
+  .menu-item-card .card-body {
+    padding: 1.5rem;
+  }
+  
+  .menu-item-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-item-card .card-text {
+    margin-bottom: 1rem;
+  }
+  
+  .menu-item-card .price {
+    font-weight: bold;
+  }
+  
+  /* Add to Cart Button Styling */
+  .menu-item-card .btn-primary {
+    background-color: #8B0000;
+    border-color: #8B0000;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-item-card .btn-primary:hover {
+    background-color: #B22222;
+    border-color: #B22222;
+  }
+  
+  .add-to-cart-btn {
+    position: relative;
+  }
+  
+  .quantity-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .go-to-cart-btn {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+    transition: background-color 0.3s ease;
+  }
+  
+  .go-to-cart-btn:hover {
+    background-color: #ff4757;
+    border-color: #ff4757;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
